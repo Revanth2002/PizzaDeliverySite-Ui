@@ -44,7 +44,7 @@
 }
 
 .nav-link.active {
-    color: #f54748 !important;
+    color: rgba(0,0,0,.55) !important;
 }
 
 

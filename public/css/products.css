@@ -1,4 +1,9 @@
 
+#navbar-main {
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.09); 
+  }
+  
+  
 .promotion-box,.products-box{
     background-color: white !important;
 }

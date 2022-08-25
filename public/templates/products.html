@@ -23,12 +23,56 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/products.css">
 
+    <!--Scrtips Imports-->
+    <script src="base.js" type="text/javascript" defer></script>
+
     <title>Products | Pizza Delivery Hub</title>
 
 
 </head>
 
 <body>
+
+  
+    <!--Navbar content-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-main">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img weight="30" height="24"  src="../imgs/logo.jpeg"  alt='logo'/>
+          
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/products">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cart">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Help</a>
+            </li>
+
+          </ul>
+          <div class="d-flex navbar-right-widgets">
+               <h5><i class="fa fa-search"></i></h5>
+                <a href="/login">
+                  <button class="btn login-btn" type="button" >Login</button>
+                </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
 
     <!--Promotion Image-->
     <div class="container-fluid default-box promotion-box">
@@ -199,6 +243,61 @@
       </div>
     </div>
 
+
+        <!--Footer-->
+        <div class="footer footer-box" id="footer">
+          <div class="container">     
+              <div class="row">                       
+                  <div class="col-lg-4 col-sm-4 col-xs-12">
+                      <div class="single_footer">
+                          <h4>Stores</h4>
+                          <ul>
+                              <li><a href="#">Chennai</a></li>
+                              <li><a href="#">Mumbai</a></li>
+                              <li><a href="#">Hyderabad</a></li>
+                              <li><a href="#">Delhi</a></li>
+                              <li><a href="#">Kolkata</a></li>
+                          </ul>
+                      </div>
+                  </div><!--- END COL --> 
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="single_footer single_footer_address">
+                          <h4>Important Link</h4>
+                          <ul>
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Contact us</a></li>
+                              <li><a href="/cart">Cart</a></li>
+                              <li><a href="#">Orders</a></li>
+                          </ul>
+                      </div>
+                  </div><!--- END COL -->
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="single_footer single_footer_address">
+                          <h4>Connect with us</h4>
+                          <div class="signup_form">                           
+                              <form action="#" class="subscribe">
+                                  <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                                  <button type="button" class="subscribe__btn"><i class="fa fa-paper-plane"></i></button>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="social_profile">
+                          <ul>
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                          </ul>
+                      </div>                          
+                  </div><!--- END COL -->         
+              </div><!--- END ROW --> 
+              <div class="row">
+                  <div class="col-lg-12 col-sm-12 col-xs-12">
+                      <p class="copyright">Copyright © 2022 <a href="#">ItalianPizza</a></p>
+                  </div><!--- END COL -->                 
+              </div><!--- END ROW -->                 
+          </div><!--- END CONTAINER -->
+      </div>
 </body>
 
 </html>
