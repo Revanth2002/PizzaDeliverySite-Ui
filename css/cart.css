@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Noto Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 
 :root {
-  --pink : #ea1d63;
+  --pink : #f54748; /*ea1d63;*/
   --gray : #adadad;
   --gray-dark : #4a5056;
   --white : white;
@@ -14,17 +15,18 @@
 body {
   background: #fefefe;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-.logo{ 
-  height: 38px;
-}
-.navbar {
-  padding: 10px 5%;
-  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.09); 
-}
 
-.nav-item{
+#navbar-main {
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.09); 
+  }
+  
+
+/* .nav-item{
   font-size: 18px;
   padding: 0 4%;
 }
@@ -34,7 +36,7 @@ body {
 }
 .nav-link:hover{
   color: var(--pink) ; 
-}
+} */
 .two-menu {
   margin-right: 5%;
   margin-left: 1%;
@@ -108,16 +110,18 @@ body {
 .custom-btn {
   cursor: pointer;
   padding: 3% 12%;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 15px;
   color: var(--pink);
   background: none;
   border: 1px solid var(--pink);
 }
 
 .custom-btn-fill {
-  padding: 3% 12%;
-  cursor: pointer;
-  font-size: 20px;
+    cursor: pointer;
+    padding: 3% 12%;
+    font-weight: 500;
+    font-size: 15px;
   text-transform: uppercase;
   color: var(--white);
   background: var(--pink);
@@ -125,26 +129,24 @@ body {
 }
 
 .help-text h5 {
-  font-size: 22px;
+  font-size: 18px;
   text-align: right;
   padding-top: 2%;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.text-style-5 {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--bs-gray-dark);
-}
 
 .text-style-5 {
+    font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--bs-gray-dark);
 }
 
 .text-style-4 {
+    font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--bs-gray-dark);
@@ -152,20 +154,28 @@ body {
 
 .text-style-3 {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--bs-gray-dark);
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .text-style-2 {
   font-size: 17px;
   color: gray;
   font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .text-style-1 {
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--bs-gray-dark);
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--bs-gray-dark);
+}
+
+.payment .text-style-1 {
+    font-weight: bold !important;
 }
 
 .items-body {
@@ -182,6 +192,8 @@ body {
 
 .promo-box span {
   font-size: 19px;
+  font-weight: 500;
+  font-family: 'Noto Sans', sans-serif;
   color: var(--light-orange);
 }
 
@@ -190,10 +202,11 @@ body {
 }
 
 .custom-card {
-  text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
   padding: 3%;
   border: 2px solid var(--pink);
-  border-radius: 10px;
+  border-radius: 5px;
   color: var(--pink);
 }
 
@@ -220,28 +233,39 @@ body {
 }
 
 .custom-card h4 {
-  font-size: 22px;
-  text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .custom-card-gray h4 {
-  font-size: 22px;
-  text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .custom-card p {
-  padding: 0 5%;
-  font-size: 19px;
-  color: var(--gray);
+
+    padding: 0 5%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--pink);
+
 }
 
 .custom-card-gray p {
-  padding: 0 5%;
-  font-size: 19px;
+    padding: 0 5%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .timeline-box {
-  padding: 1% 0;
+margin-top:25px;
+    padding: 1% 0;
   text-align: center;
 }
 
